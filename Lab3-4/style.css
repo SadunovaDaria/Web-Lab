@@ -1,0 +1,136 @@
+
+.header-top {
+  background: url(img/header.jpg) center center/cover no-repeat;
+  height: 540px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.header-text {
+  font-size: 15px;
+  font-size: 70px;
+  color: #252424;
+  font-weight: 900;
+  padding-top: 30px;
+}
+
+.subheader-text {
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  padding: 9px 22px;
+  border: 2px solid transparent;
+}
+
+.btn a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.btn a {
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: #fff;
+  padding: 9px 22px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+  padding-top: 70px;
+  font-size: 15px;
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+
+}
+.box-main {
+    display: flex;
+     flex-wrap: wrap;
+    position: relative;
+    margin: -70px 40px 0 40px;
+}
+.box-container {
+  padding: 80px 0px;
+  box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+  background: #fff;
+}
+
+.box-item {
+  width: 33.3%;
+    text-align: center;
+}
+
+.item-text {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-weight: 600;
+  color: #555;
+}
+
+.item-counter {
+  font-size: 50px;
+  font-weight: 900;
+  color: #444;
+  line-height: 48px;
+  margin-bottom: 13px;
+}
+
+.card-item {
+  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+  margin: 20px;
+  display: inline-block;
+}
+
+.card-item-text {
+  min-height: 80px;
+  background: #f3f3f3; 
+  text-align: center;
+  padding-top: 40px;
+}
+
+.card-item-text h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  color: #f16266;
+  font-weight: 400;
+  font-family: monospace;
+}
+
+footer {
+  background: #f9f9f9;
+  padding: 70px 0px;
+}
+
+.footer-container h2 {
+  text-align: center;
+  color: #444;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.footer-container .btn {
+  margin-bottom: 50px;
+}
+
+.copy-right {
+  text-align: center;
+  color: #f26367;
+  letter-spacing: 0.05em;
+  font-size: 17px;
+}

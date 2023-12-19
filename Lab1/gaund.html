@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+   
+    <style>
+        *{  font-family:cursive;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 1024px; 
+            margin-right: auto; 
+            margin-left: auto; 
+ }
+        #header {
+            padding-top: 20px;
+            margin:auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #header p{
+            line-height:50px;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+        li {
+            text-decoration: none;
+            list-style: none;
+            
+        }
+
+	.head{
+	text-align: center;
+	}
+        .text_header{
+            width: 800px;
+            font-size: 20px;
+        }
+        .Top_menu {
+             position: relative;
+            overflow:hidden;
+            padding-top: 50px;
+            font-size: 20px;
+             margin: 0 auto;
+        }
+        .Top_menu ul li{
+            float:left;
+            margin-right:50px;
+            margin-left: 50px;
+        }
+        .Top_menu a:hover{
+            color: slateblue;
+        }
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 120px;
+            left: 200px;
+            overflow-x: hidden;
+            padding-top: 50px;
+        }   
+
+        .sidenav a, .dropdown-btn {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .sidenav a:hover, .dropdown-btn:hover {
+            color: slateblue;
+        }
+
+        .main {
+            margin-left: 200px; 
+            font-size: 20px; 
+            padding: 50px 20px;
+        }
+
+
+        .active {
+            background-color:antiquewhite;
+            color: black;
+        }
+
+        .dropdown-container {
+            display: none;
+            padding-left: 8px;
+        }
+        .img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .image {
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .image>span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image>span>*:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div id="header">
+                 <a href="#" style="font-size: 30px;">Лабораторная 1</a>
+                 <div class="text_header" align="right">Телефон
+                            <br>E-mail</div>
+                 <div class="Top_menu" align="center">
+                    <ul>
+                     <li><a href="#">Главная</a></li>
+                     <li><a href="#">Услуги</a></li>
+                     <li><a href="#">Контакты</a></li>
+                     <li><a href="#">Цены</a></li>
+                    </ul>
+                 </div>
+</div>
+
+                <div class="sidenav">
+                  <a href="index.html">Приложения</a>
+                  <button class="dropdown-btn">Веб-разработка 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-container">
+                    <a href="gaund.html">Fronted</a>
+                    <a href="#">Backend</a>
+                  </div>
+                  <a href="#">Blockchain</a>
+                </div>
+    
+                <div class="main">
+                  <h2 class="head">Разработка приложений</h2>
+</br>
+                        <div class="features-block">
+                          <div class="image">
+                            <span>
+                                <img src="img1.jpg" alt="" width="120" height="120">
+                                <p>Пример</p>
+                            </span>
+                            <span>
+                                <img src="img1.jpg" alt="" width="120" height="120">
+                                <p>Пример</p>
+                            </span>
+                            <span>
+                                <img src="img1.jpg" alt="" width="120" height="120">
+                                <p>Пример</p>
+                            </span>
+                          </div>
+                        </div>
+			</br>
+</br>
+
+                  <p class="head">Наши сайты самые лучшие.</p>
+                </div>
+<script>
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+ 
+    <footer>
+    </footer>
+  </body>
+</html>
