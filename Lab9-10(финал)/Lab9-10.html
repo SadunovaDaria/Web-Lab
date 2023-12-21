@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+
+<div id="contact-form">
+	
+		   <form name="form" onsubmit="return validate()">
+			<div>
+		      <label for="Your name">
+		      	<input type="text" id="Yourname" name="Yourname" value="" placeholder="Your name" />
+                  <span style="color:red" id="Yournamex"></span>
+		      </label> 
+			</div>
+			<div>
+		      <label for="YourEmail">
+		      	<input type="text" id="YourEmail" name="YourEmail" value="" placeholder="Your Email" />
+                  <span style="color:red" id="YourEmailx"></span>
+		      </label>  
+			</div>
+			<div>		          
+		      <label for="Subject">
+			      <input type="text" id="Subject" name="Subject" value="" placeholder="Subject" />
+                  <span style="color:red" id="Subjectx"></span>
+		      </label>
+			</div>
+			<div>		          
+		      <label for="message">
+		      	<textarea id="message" name="message" placeholder="Message" ></textarea> 
+                  <span style="color:red" id="messagex"></span>
+		      </label>  
+			</div>
+			<div>		           
+		      <button name="Sendmessage" type="Sendmessage" id="Sendmessage" >Send message</button> 
+			</div>
+		   </form>
+
+	</div>
+    </body>
+    <script src="script.js"></script>
+</html>
